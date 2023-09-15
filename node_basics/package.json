@@ -1,0 +1,19 @@
+{
+  "name": "hello-node",
+  "version": "1.0.0",
+  "description": "Project having all node.js features example",
+  "main": "app.js",
+  "scripts": {
+    "test": "test",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "learning-nodejs"
+  },
+  "keywords": [
+    "node"
+  ],
+  "author": "devyani",
+  "license": "ISC"
+}
