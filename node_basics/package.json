@@ -1,18 +1,19 @@
 {
-  "name": "hello-node",
+  "name": "node_basics",
   "version": "1.0.0",
-  "description": "Project having all node.js features example",
-  "main": "app.js",
+  "description": "basic understanding of node.js",
+  "main": "index.js",
   "scripts": {
-    "test": "test",
-    "start": "node app.js"
+    "test": "test ",
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
-    "url": "learning-nodejs"
+    "url": "Nodejs_Projects"
   },
   "keywords": [
-    "node"
+    "node.js",
+    "basics"
   ],
   "author": "devyani",
   "license": "ISC"
