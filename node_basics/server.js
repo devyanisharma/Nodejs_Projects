@@ -1,8 +1,15 @@
 // server 
 const http = require("http")
+const url = require("url")
 const fs = require("fs")
+
+
+
+
 const server = http.createServer((req,res) => {
-    const data = `New request received at ${Date.now()} on ${req.url}\n`
+    const data = `New request received at ${Date.now()} with ${req.method} on ${req.url}\n`
+    const myurl = req.url;
+    console.log(url.parse(myurl,true))
     if(req.url === "/favicon.ico") return res.end();
         console.log("new request received")
         fs.appendFile("./log.txt", data, (error) => {
@@ -20,3 +27,4 @@ const hostName = "localhost"
 server.listen(port,hostName,()=>{
     console.log(`server is listening on port ${port}`)
 })
+

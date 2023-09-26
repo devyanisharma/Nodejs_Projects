@@ -1,0 +1,7 @@
+Rest api creation - 
+GET /api/users - get all users
+GET /api/users/:id - get user with userid
+POST /api/users - create a new user
+PUT /api/users/:id - update details in user
+PATCH /api/user/:id - update details in user
+DELETE /api/user/:id - delete user

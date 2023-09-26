@@ -1,20 +1,24 @@
 {
   "name": "node_basics",
   "version": "1.0.0",
-  "description": "basic understanding of node.js",
+  "description": "basic nodejs ",
   "main": "index.js",
   "scripts": {
     "test": "test ",
-    "start": "node server.js"
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
-    "url": "Nodejs_Projects"
+    "url": "NODEJS_PROJECTS"
   },
   "keywords": [
-    "node.js",
+    "node",
     "basics"
   ],
   "author": "devyani",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "url": "^0.11.3"
+  }
 }
