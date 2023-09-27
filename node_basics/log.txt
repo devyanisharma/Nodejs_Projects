@@ -1,5 +1,8 @@
 
-New request received at 1695724314330 on /
-New request received at 1695726317174 on /devyanisharma?userid=1
-New request received at 1695726582288 on /devyanisharma?userid=1
-New request received at 1695754105398 with POST on /api/users
+
+New GET request received at 1695842098768 at /api/users
+New GET request received at 1695842329714 at /api/users
+New GET request received at 1695842347217 at /api/users
+New POST request received at 1695849093693 at /api/users/3
+New POST request received at 1695849196249 at /api/users
+New POST request received at 1695849662294 at /api/users

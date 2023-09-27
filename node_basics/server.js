@@ -3,11 +3,8 @@ const http = require("http")
 const url = require("url")
 const fs = require("fs")
 
-
-
-
 const server = http.createServer((req,res) => {
-    const data = `New request received at ${Date.now()} with ${req.method} on ${req.url}\n`
+    const data = `New ${req.method} request received at ${Date.now()} at ${req.url}\n`
     const myurl = req.url;
     console.log(url.parse(myurl,true))
     if(req.url === "/favicon.ico") return res.end();
@@ -18,13 +15,13 @@ const server = http.createServer((req,res) => {
                 console.log("error in appending file")
                 console.log(error)
             }else{
-                res.end("request received")
+                res.end("request received");
             }
         })
 })
 const port = 8080 
 const hostName = "localhost"
 server.listen(port,hostName,()=>{
-    console.log(`server is listening on port ${port}`)
+    console.log(`server is listening on port: ${port}`)
 })
 
