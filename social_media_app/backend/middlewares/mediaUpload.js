@@ -2,16 +2,6 @@ const { S3Client } = require('@aws-sdk/client-s3')
 const multer = require('multer')
 const multerS3 = require('multer-s3')
 
-
-    const s3Client = new S3Client({
-        region: "ap-south-1",
-        credentials: {
-            accessKeyId: "AKIA6FNBXNUNTTL6NBUX",
-            secretAccessKey: "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"
-    
-        }
-    })
-    
     const upload = multer({
         storage: multerS3({
           s3: s3Client,
