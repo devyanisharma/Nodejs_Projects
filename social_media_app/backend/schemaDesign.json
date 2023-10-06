@@ -1,0 +1,36 @@
+{
+    "users": {
+        "name": "string",
+        "username": "string",
+        "email": "string",
+        "mobile":"number",
+        "password": {
+            "hash": "string",
+            "salt": "string",
+        },
+        "createdDate": "date",
+        "updatedDate": "date"
+    },
+
+    "posts": {
+        "user_id" : "string",
+        "caption": "string",
+        "content": [
+            {
+                "type": "IMAGE|VIDEO",
+                "url": "string"
+            }
+        ],
+        "commentCount": "number",
+        "created_date": "date",
+        "updated_date": "date",
+        "comments": [
+            {
+                "content": "string",
+                "author": "string",
+                "created_date": "date",
+                "updated_date": "date"
+            }
+        ]
+    }
+}
